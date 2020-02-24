@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
       --second-font: "Rancho";
       --main-background: #fff;
       --main-color-text: #212121;
+      --second-color-text: #767676
     }
 
     // HTML Tags
