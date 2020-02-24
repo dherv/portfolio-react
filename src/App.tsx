@@ -1,31 +1,15 @@
 import React from "react";
-import { Normalize } from "styled-normalize";
-import { GlobalStyle } from "./styled/GlobalStyle";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Layout from "./components/layout/Layout";
 
 const App = () => {
   return (
     <Router>
-      <Normalize />
-      <GlobalStyle />
-      <header>
-        <h1>damien hervieux</h1>
-        <ul>
-          <li>
-            <Link to="/projects">projects</Link>
-          </li>
-          <li>
-            <Link to="/skills">skills</Link>
-          </li>
-          <li>
-            <Link to="/about">about me</Link>
-          </li>
-        </ul>
-      </header>
-      <main>
+      <Layout>
         <Switch>
           <Route exact path="/projects">
             <Projects />
@@ -37,7 +21,7 @@ const App = () => {
             <Skills />
           </Route>
         </Switch>
-      </main>
+      </Layout>
     </Router>
   );
 };
