@@ -1,19 +1,19 @@
 {
   "watchers": {
-    "image": "",
+    "image": "watchers_details.jpg",
     "title": "Watchers",
     "text": "It shows movies you can watch online this week, store them in a watchlist or a likelist",
     "icons": ["Node", "React"]
   },
   "nikki": {
-    "image": "",
+    "image": "nikki_editor.png",
     "title": "Nikki",
     "text": "It shows movies you can watch online this week, store them in a watchlist or a likelist",
     "icons": ["Node", "React"]
   },
   "jiujiTheory": {
     "image": "",
-    "title": "Watchers",
+    "title": "Jiuji Theory",
     "text": "It shows movies you can watch online this week, store them in a watchlist or a likelist",
     "icons": ["Node", "React"]
   },
