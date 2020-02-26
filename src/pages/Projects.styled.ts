@@ -6,9 +6,9 @@ export const SCProjects = {
     margin-bottom: 2rem;
   `,
   ListItem: styled.li`
-    margin-right: 2rem;
+    margin-right: 3rem;
     font-family: var(--second-font);
-    font-size: 1.5rem;
+    font-size: 2rem;
     a {
       color: var(--second-color-text);
     }

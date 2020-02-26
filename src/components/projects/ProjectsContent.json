@@ -2,8 +2,8 @@
   "watchers": {
     "image": "watchers_details.jpg",
     "title": "Watchers",
-    "text": "It shows movies you can watch online this week, store them in a watchlist or a likelist",
-    "icons": ["Node", "React"]
+    "text": "Watchers shows a selection of movies that are available online or will be soon. For now, it includes a movie list and a watchlist. I will soon develop and add to it series, filters and a progressive web application.",
+    "icons": ["Node", "React", "Express", "GraphQL", "MongoDB"]
   },
   "nikki": {
     "image": "nikki_editor.png",

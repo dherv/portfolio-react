@@ -4,6 +4,7 @@ export const SCProjectsLayout = {
   Container: styled.div`
     display: flex;
     justify-content: space-between;
+    margin-top: 4rem;
   `,
   Title: styled.h1`
     font-weight: 800;
