@@ -16,9 +16,6 @@ const Projects = () => (
       <SC.ListItem>
         <Link to="/projects/jiujitheory">jiuji theory</Link>
       </SC.ListItem>
-      <SC.ListItem>
-        <Link to="/projects/work">work</Link>
-      </SC.ListItem>
     </SC.List>
     <Route
       path={`/projects/watchers`}

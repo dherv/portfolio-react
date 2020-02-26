@@ -12,6 +12,9 @@ const Nav = () => (
         <SC.Link to="/skills">skills</SC.Link>
       </SC.ListItem>
       <SC.ListItem>
+        <SC.Link to="/work">work</SC.Link>
+      </SC.ListItem>
+      <SC.ListItem>
         <SC.Link to="/about">about me</SC.Link>
       </SC.ListItem>
     </SC.List>

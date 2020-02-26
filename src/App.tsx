@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Layout from "./components/layout/Layout";
+import Work from "./pages/Work";
 
 const App = () => {
   return (
@@ -21,11 +22,14 @@ const App = () => {
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
           <Route exact path="/skills">
             <Skills />
+          </Route>
+          <Route exact path="/work">
+            <Work />
+          </Route>
+          <Route exact path="/about">
+            <About />
           </Route>
         </Switch>
       </Layout>
