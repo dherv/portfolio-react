@@ -31,30 +31,23 @@ const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
     return map.get(icon);
   };
   return (
-    <SC.Container>
-      <div>
-        <SC.Title>{content.title}</SC.Title>
-        <SC.Paragraph
-          style={{
-            width: "60%"
-          }}
-        >
-          {content.text}
-        </SC.Paragraph>
-        <div
-          style={{
-            width: "50%",
-            display: "flex",
-            justifyContent: "space-between"
-          }}
-        >
-          {content.icons.map((i: string) => (
-            <div style={{}}>{mapStringToIcon(i)}</div>
-          ))}
+    <>
+      <SC.Container>
+        <div>
+          <SC.Title>{content.title}</SC.Title>
+          <SC.Paragraph>{content.text}</SC.Paragraph>
+          <SC.Icons>
+            {content.icons.map((i: string) => (
+              <div>{mapStringToIcon(i)}</div>
+            ))}
+          </SC.Icons>
         </div>
-      </div>
-      <SC.Image src={imageSrc} alt=""></SC.Image>
-    </SC.Container>
+        <SC.Image src={imageSrc} alt=""></SC.Image>
+      </SC.Container>
+      <SC.FlexContainer>
+        <SC.ButtonVisit>visit</SC.ButtonVisit>
+      </SC.FlexContainer>
+    </>
   );
 };
 
