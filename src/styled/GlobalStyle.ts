@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
     :root {
       --title-font: "Open Sans", Roboto, sans-serif;
       --main-font: "Open Sans", Arial, sans-serif;
-      --second-font: "Rancho";
+      --second-font: "Reenie Beanie";
       --main-background: #fff;
       --main-color-text: #212121;
       --second-color-text: #767676
