@@ -3,10 +3,17 @@ import { SCProjectsLayout as SC } from "./ProjectsLayout.styled";
 import {
   IconNode,
   IconReact,
+  IconTypescript,
   IconExpress,
+  IconMongoDB,
   IconGraphQL,
-  IconMongoDB
-} from "../icons/DevIcons";
+  IconDocker,
+  IconNextJS,
+  IconNestJS,
+  IconAWS,
+  IconGoogleCloud,
+  IconMySQL
+} from "../icons/IconsPlain";
 
 const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
   const [imageSrc, setImageSrc] = useState();
@@ -20,12 +27,20 @@ const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
   }, [content]);
 
   const mapStringToIcon = (icon: string) => {
+    const color = "#484848";
     const map = new Map([
-      ["Node", <IconNode />],
-      ["React", <IconReact />],
-      ["Express", <IconExpress />],
-      ["GraphQL", <IconGraphQL />],
-      ["MongoDB", <IconMongoDB />]
+      ["Node", <IconNode color={color} />],
+      ["React", <IconReact color={color} />],
+      ["Typescript", <IconTypescript color={color} />],
+      ["Express", <IconExpress color={color} />],
+      ["MongoDB", <IconMongoDB color={color} />],
+      ["GraphQL", <IconGraphQL color={color} />],
+      ["NextJS", <IconNextJS color={color} />],
+      ["NestJS", <IconNestJS color={color} />],
+      ["MySQL", <IconMySQL color={color} />],
+      ["GoogleCloud", <IconGoogleCloud color={color} />],
+      ["AWS", <IconAWS color={color} />],
+      ["Docker", <IconDocker color={color} />]
     ]);
 
     return map.get(icon);
@@ -36,16 +51,16 @@ const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
         <div>
           <SC.Title>{content.title}</SC.Title>
           <SC.Paragraph>{content.text}</SC.Paragraph>
-          <SC.Icons>
-            {content.icons.map((i: string) => (
-              <div>{mapStringToIcon(i)}</div>
-            ))}
-          </SC.Icons>
         </div>
         <SC.Image src={imageSrc} alt=""></SC.Image>
       </SC.Container>
       <SC.FlexContainer>
-        <SC.ButtonVisit>visit</SC.ButtonVisit>
+        <SC.Icons>
+          {content.icons.map((i: string) => (
+            <SC.IconItem>{mapStringToIcon(i)}</SC.IconItem>
+          ))}
+        </SC.Icons>
+        {/* <SC.ButtonVisit>visit</SC.ButtonVisit> */}
       </SC.FlexContainer>
     </>
   );
