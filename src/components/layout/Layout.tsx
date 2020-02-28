@@ -3,9 +3,9 @@ import { Normalize } from "styled-normalize";
 import { GlobalStyle } from "../../styled/GlobalStyle";
 import Nav from "./Nav";
 import { SCLayout as SC } from "./Layout.styled";
-import { Download } from "styled-icons/boxicons-solid";
 import { Github, Linkedin } from "styled-icons/boxicons-logos";
 import styled from "styled-components";
+
 const Layout: FC<{}> = ({ children }) => {
   return (
     <>
@@ -17,18 +17,15 @@ const Layout: FC<{}> = ({ children }) => {
       <SC.Main>{children}</SC.Main>
       <Footer>
         <IconContainer>
-          {/* <span>download resume</span> */}
-          <DownloadIcon size="32"></DownloadIcon>
+          <a href="https://github.com/dherv" target="blank">
+            <GithubIcon size="32"></GithubIcon>
+          </a>
         </IconContainer>
 
         <IconContainer>
-          {/* <span>github</span> */}
-          <GithubIcon size="32"></GithubIcon>
-        </IconContainer>
-
-        <IconContainer>
-          {/* <span>linkedin</span> */}
-          <LinkedinIcon size="32"></LinkedinIcon>
+          <a href="https://www.linkedin.com/in/dherv" target="blank">
+            <LinkedinIcon size="32"></LinkedinIcon>
+          </a>
         </IconContainer>
       </Footer>
     </>
@@ -54,9 +51,6 @@ const IconContainer = styled.div`
   margin: 0 1rem;
   font-family: var(--main-font);
   font-size: 1rem;
-`;
-const DownloadIcon = styled(Download)`
-  color: rgba(67, 83, 255, 0.8);
 `;
 const GithubIcon = styled(Github)`
   color: rgba(67, 83, 255, 0.8);
