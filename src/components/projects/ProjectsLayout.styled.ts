@@ -4,20 +4,20 @@ export const SCProjectsLayout = {
   Container: styled.div`
     display: flex;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin: 7rem 0 3rem 0;
   `,
   FlexContainer: styled.div`
     display: flex;
-    margin-top: 4rem;
   `,
   Title: styled.h1`
     font-weight: 800;
     font-size: 2.5rem;
   `,
   Paragraph: styled.p`
-    width: 80%;
+    width: 75%;
     margin: 2rem 0;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.5;
   `,
   Icons: styled.ul`
     width: 100%;
