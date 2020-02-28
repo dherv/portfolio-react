@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink as RouterLink } from "react-router-dom";
 
 export const SCNav = {
   Nav: styled.nav`
@@ -20,5 +20,7 @@ export const SCNav = {
   `,
   Link: styled(RouterLink)`
     color: #000;
+    font-family: Caveat;
+    font-size: 1.5rem;
   `
 };
