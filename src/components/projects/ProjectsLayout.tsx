@@ -27,20 +27,21 @@ const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
   }, [content]);
 
   const mapStringToIcon = (icon: string) => {
-    const color = "#484848";
+    const color = "#000";
+
     const map = new Map([
-      ["Node", <IconNode color={color} />],
-      ["React", <IconReact color={color} />],
-      ["Typescript", <IconTypescript color={color} />],
-      ["Express", <IconExpress color={color} />],
-      ["MongoDB", <IconMongoDB color={color} />],
+      ["Node", <IconNode color={color} size={3} />],
+      ["React", <IconReact color={color} size={1} />],
+      ["Typescript", <IconTypescript color={color} size={0} />],
+      ["Express", <IconExpress color={color} size={3} />],
+      ["MongoDB", <IconMongoDB color={color} size={1} />],
       ["GraphQL", <IconGraphQL color={color} />],
       ["NextJS", <IconNextJS color={color} />],
       ["NestJS", <IconNestJS color={color} />],
-      ["MySQL", <IconMySQL color={color} />],
+      ["MySQL", <IconMySQL color={color} size={3} />],
       ["GoogleCloud", <IconGoogleCloud color={color} />],
-      ["AWS", <IconAWS color={color} />],
-      ["Docker", <IconDocker color={color} />]
+      ["AWS", <IconAWS color={color} size={3} />],
+      ["Docker", <IconDocker color={color} size={1} />]
     ]);
 
     return map.get(icon);

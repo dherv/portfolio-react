@@ -5,9 +5,9 @@
     "text": "Watchers shows a selection of movies that are available online or will be soon. For now, it includes a movie list and a watchlist. I will soon develop and add to it series, filters and a progressive web application.",
     "icons": [
       "Node",
+      "Express",
       "React",
       "Typescript",
-      "Express",
       "GraphQL",
       "MongoDB",
       "AWS",
@@ -20,9 +20,9 @@
     "text": "I built Nikki to have a web application to help me write a daily diary in a foreign language. I can write, use the translator and have a voice play the translation. Finally, I can save the words I looked up and wrote down.",
     "icons": [
       "Node",
+      "NestJS",
       "NextJS",
       "Typescript",
-      "NestJS",
       "MySQL",
       "GoogleCloud",
       "AWS",
@@ -35,9 +35,9 @@
     "text": "As I practice jiujitsu, I wanted to have an application to keep track of the techniques we learn. Also I will develop it to have related videos embedded, social account and filters. As also plan on building a progressive web app or a native mobile application for it (since I also write on the way home)",
     "icons": [
       "Node",
+      "NestJS",
       "NextJS",
       "Typescript",
-      "NestJS",
       "MySQL",
       "AWS",
       "Docker"
