@@ -8,13 +8,13 @@ const Projects = () => (
   <div>
     <SC.List>
       <SC.ListItem>
-        <Link to="/projects/watchers">watchers</Link>
+        <SC.RouterLink to="/projects/watchers">watchers</SC.RouterLink>
       </SC.ListItem>
       <SC.ListItem>
-        <Link to="/projects/nikki">nikki</Link>
+        <SC.RouterLink to="/projects/nikki">nikki</SC.RouterLink>
       </SC.ListItem>
       <SC.ListItem>
-        <Link to="/projects/jiujitheory">jiuji theory</Link>
+        <SC.RouterLink to="/projects/jiujitheory">jiuji theory</SC.RouterLink>
       </SC.ListItem>
     </SC.List>
     <Route
@@ -30,10 +30,6 @@ const Projects = () => (
       component={() => (
         <ProjectsLayout content={ProjectsContent["jiujiTheory"]} />
       )}
-    />
-    <Route
-      path={`/projects/work`}
-      component={() => <ProjectsLayout content={ProjectsContent["work"]} />}
     />
   </div>
 );
