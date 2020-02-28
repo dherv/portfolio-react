@@ -1,6 +1,6 @@
 import React from "react";
 import { SCProjects as SC } from "./Projects.styled";
-import { NavLink as Link, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import ProjectsContent from "../components/projects/ProjectsContent.json";
 import ProjectsLayout from "../components/projects/ProjectsLayout";
 
