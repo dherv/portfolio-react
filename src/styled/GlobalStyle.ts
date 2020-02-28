@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
       box-sizing: border-box;
       font-size: 16px;
       font-family: var(--main-font);
+      line-height: 1.5
     }
 
     *, *:before, *:after {

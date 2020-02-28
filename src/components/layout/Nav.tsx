@@ -3,7 +3,7 @@ import { SCNav as SC } from "./Nav.styled";
 
 const Nav = () => (
   <SC.Nav>
-    <h1>damien hervieux</h1>
+    <SC.Title>damien hervieux</SC.Title>
     <SC.List>
       <SC.ListItem>
         <SC.Link to="/projects">projects</SC.Link>

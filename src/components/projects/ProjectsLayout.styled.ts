@@ -15,14 +15,19 @@ export const SCProjectsLayout = {
     font-size: 2.5rem;
   `,
   Paragraph: styled.p`
-    width: 60%;
+    width: 80%;
     margin: 2rem 0;
-    font-size: 1rem;
+    font-size: 18px;
   `,
-  Icons: styled.div`
-    width: 50%;
+  Icons: styled.ul`
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  `,
+  IconItem: styled.li`
+    margin: 0.5rem 1rem;
   `,
   Image: styled.img`
     width: 650px;

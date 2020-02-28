@@ -6,7 +6,10 @@ export const SCNav = {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 7rem;
+  `,
+  Title: styled.h1`
+    font-family: Caveat;
   `,
   List: styled.ul`
     display: flex;
