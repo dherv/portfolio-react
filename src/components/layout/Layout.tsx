@@ -17,7 +17,7 @@ const Layout: FC<{}> = ({ children }) => {
       <SC.Main>{children}</SC.Main>
       <Footer>
         <IconContainer>
-          <a href="https://github.com/dherv" target="blank">
+          <a href="https://github.com/dherv?tab=repositories" target="blank">
             <GithubIcon size="32"></GithubIcon>
           </a>
         </IconContainer>
