@@ -19,6 +19,7 @@ const App = () => {
         <Switch>
           <Redirect exact from="/" to="/projects/watchers" />
           <Redirect from="/projects" exact to="/projects/watchers" />
+          <Redirect from="/work" exact to="/work/naviboard" />
 
           <Route path="/projects">
             <Projects />
@@ -26,7 +27,7 @@ const App = () => {
           <Route exact path="/skills">
             <Skills />
           </Route>
-          <Route exact path="/work">
+          <Route path="/work">
             <Work />
           </Route>
           <Route exact path="/about">

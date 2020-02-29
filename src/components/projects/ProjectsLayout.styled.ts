@@ -4,16 +4,10 @@ export const SCProjectsLayout = {
   Container: styled.div`
     display: flex;
     justify-content: space-between;
-    margin: 7rem 0 3rem 0;
+    margin: 3rem 0 3rem 0;
   `,
   FlexContainer: styled.div`
     display: flex;
-  `,
-  Paragraph: styled.p`
-    width: 75%;
-    margin: 2rem 0;
-    font-size: 20px;
-    line-height: 1.5;
   `,
   Icons: styled.ul`
     width: 100%;

@@ -52,7 +52,7 @@ const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
       <SC.Container>
         <div>
           <SCG.Title>{content.title}</SCG.Title>
-          <SC.Paragraph>{content.text}</SC.Paragraph>
+          <SCG.Paragraph>{content.text}</SCG.Paragraph>
         </div>
         <SC.Image src={imageSrc} alt=""></SC.Image>
       </SC.Container>
