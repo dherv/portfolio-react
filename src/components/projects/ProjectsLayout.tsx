@@ -14,6 +14,7 @@ import {
   IconGoogleCloud,
   IconMySQL
 } from "../icons/IconsPlain";
+import { SCG } from "../../styled/GlobalComponents";
 
 const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
   const [imageSrc, setImageSrc] = useState();
@@ -50,7 +51,7 @@ const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
     <>
       <SC.Container>
         <div>
-          <SC.Title>{content.title}</SC.Title>
+          <SCG.Title>{content.title}</SCG.Title>
           <SC.Paragraph>{content.text}</SC.Paragraph>
         </div>
         <SC.Image src={imageSrc} alt=""></SC.Image>
@@ -61,7 +62,7 @@ const ProjectsLayout: FC<{ content: any }> = ({ content }) => {
             <SC.IconItem>{mapStringToIcon(i)}</SC.IconItem>
           ))}
         </SC.Icons>
-        {/* <SC.ButtonVisit>visit</SC.ButtonVisit> */}
+        {/* <SCG.ButtonVisit>visit</SCG.ButtonVisit> */}
       </SC.FlexContainer>
     </>
   );
