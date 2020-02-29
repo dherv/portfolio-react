@@ -19,7 +19,6 @@ export const SCSkills = {
   InlineTitle: styled.div`
     font-weight: 800;
     margin-right: 1rem;
-    color: #484848;
   `,
   InlineText: styled.div`
     margin-right: 1rem;
