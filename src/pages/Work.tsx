@@ -14,7 +14,7 @@ const Work = () => (
         <SC.RouterLink to="/work/loco">loco</SC.RouterLink>
       </SC.ListItem>
       <SC.ListItem>
-        <SC.RouterLink to="/work/rflocus">RF Locus</SC.RouterLink>
+        <SC.RouterLink to="/work/locuscloud">locus cloud</SC.RouterLink>
       </SC.ListItem>
       <SC.ListItem>
         <SC.RouterLink to="/work/motivo">motivo</SC.RouterLink>
@@ -32,8 +32,8 @@ const Work = () => (
       component={() => <WorkLayout content={WorkContent["loco"]} />}
     />
     <Route
-      path={`/work/rflocus`}
-      component={() => <WorkLayout content={WorkContent["rflocus"]} />}
+      path={`/work/locuscloud`}
+      component={() => <WorkLayout content={WorkContent["locuscloud"]} />}
     />
     <Route
       path={`/work/motivo`}

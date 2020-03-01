@@ -9,7 +9,9 @@ const WorkLayout: FC<{ content: any }> = ({ content }) => {
         <div>
           <SCG.Title>{content.title}</SCG.Title>
           <SCG.Paragraph>{content.skills.join(", ")}</SCG.Paragraph>
-          <SCG.Paragraph>{content.text}</SCG.Paragraph>
+          <SCG.Paragraph style={{ whiteSpace: "pre-wrap" }}>
+            {content.text}
+          </SCG.Paragraph>
         </div>
       </SC.Container>
     </>
