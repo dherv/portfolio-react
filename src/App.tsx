@@ -17,7 +17,7 @@ const App = () => {
     <Router>
       <Layout>
         <Switch>
-          <Redirect exact from="/" to="/projects/watchers" />
+          <Redirect exact from="/" to="/about" />
           <Redirect from="/projects" exact to="/projects/watchers" />
           <Redirect from="/work" exact to="/work/naviboard" />
 
