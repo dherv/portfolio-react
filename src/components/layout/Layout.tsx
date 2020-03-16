@@ -1,6 +1,4 @@
 import React, { FC } from "react";
-import { Normalize } from "styled-normalize";
-import { GlobalStyle } from "../../styled/GlobalStyle";
 import Nav from "./Nav";
 import { SCLayout as SC } from "./Layout.styled";
 import { Github, Linkedin } from "styled-icons/boxicons-logos";
@@ -9,8 +7,6 @@ import styled from "styled-components";
 const Layout: FC<{}> = ({ children }) => {
   return (
     <>
-      <Normalize />
-      <GlobalStyle />
       <header>
         <Nav />
       </header>

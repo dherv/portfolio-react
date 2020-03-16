@@ -1,5 +1,5 @@
 import React from "react";
-
+import { GlobalStyle } from "./styled/GlobalStyle";
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,28 +14,31 @@ import Work from "./pages/Work";
 
 const App = () => {
   return (
-    <Router>
-      <Layout>
-        <Switch>
-          <Redirect exact from="/" to="/about" />
-          <Redirect from="/projects" exact to="/projects/watchers" />
-          <Redirect from="/work" exact to="/work/naviboard" />
+    <>
+      <GlobalStyle />
+      <Router>
+        <Layout>
+          <Switch>
+            <Redirect exact from="/" to="/about" />
+            <Redirect from="/projects" exact to="/projects/watchers" />
+            <Redirect from="/work" exact to="/work/naviboard" />
 
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route exact path="/skills">
-            <Skills />
-          </Route>
-          <Route path="/work">
-            <Work />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-        </Switch>
-      </Layout>
-    </Router>
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route exact path="/skills">
+              <Skills />
+            </Route>
+            <Route path="/work">
+              <Work />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </Layout>
+      </Router>
+    </>
   );
 };
 

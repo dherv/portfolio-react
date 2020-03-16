@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
-
+import { normalize } from "styled-normalize";
 export const GlobalStyle = createGlobalStyle`
+    ${normalize}
     :root {
       --title-font: "Open Sans", Roboto, sans-serif;
       --main-font: "Open Sans", Arial, sans-serif;
